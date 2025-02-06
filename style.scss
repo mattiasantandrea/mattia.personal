@@ -63,7 +63,29 @@ header {
     margin-top: 20px;
 }
 
-#curriculum
+#curriculum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .curriculum_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        div{
+            border: 1px solid black;
+            margin: 3px;
+            border-radius: 10px;
+            -webkit-box-shadow: 3px 5px 15px 5px #000000; 
+            box-shadow: 3px 5px 15px 5px #000000;
+            ul{
+                text-align: start;
+            }
+        }
+        
+    }
+
+}
 
 
 #contact {
