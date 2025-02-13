@@ -1,17 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Sito Personale</title>
+    <title>Mattia Santandrea</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="sticky-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Sono</a></li>
+                <li><a href="#about">Chi sono</a></li>
                 <li><a href="#curriculum">Curriculum</a></li>
                 <li><a href="#contact">Contatti</a></li>
             </ul>
@@ -22,58 +28,183 @@
         <div class="hero">
             <h1>Mattia and much more!</h1>
             <p>Qui puoi scoprire di più su di me.</p>
+            <a href="#about" class="btn btn-primary">Scopri di più su di me</a> 
         </div>
     </section>
 
     <section id="about">
         <h2>Chi Sono</h2>
         <p>Mi chiamo Mattia Santandrea, sono uno Chef e aspirante programmatore, appassionato di calcio, cucina e viaggi . In questo sito condivido le mie esperienze, il mio lavoro e i miei progetti. Ho iniziato il corso di formazione per Back End Developer con Start2Impact a fine 2024 non avendo neppur un minimo di formazione nel campo della programmazione. Con molta pazienza e dedizione sono riuscito ad ottenere risultati nello studio che non avrei mai immaginato.
-           Il percorso è lungo ma la mia motivazione e la mia esperienza con le sfide personali mi aiuteranno sicuramente sulla buona riuscita del corso. 
-           STAY TUNED...
+            Il percorso è lungo ma la mia motivazione e la mia esperienza con le sfide personali mi aiuteranno sicuramente sulla buona riuscita del corso. 
+            STAY TUNED...
         </p>
-        <img src="" alt="La mia foto" class="">
+        <img src="image/image personal.jpeg" alt="La mia foto" class="image">
+        <a href="#curriculum" class="btn btn-secondary">Guarda il mio curriculum</a> 
     </section>
 
     <section id="curriculum">
         <h2>Curriculum</h2>
-        <p>Le mie esperienze lavorative</p>
-        <div class="curriculum_grid">
-            <div>
-                <h3>Cuoco</h3>
-                <p>JK Piace 
-                    Via Di Monte D'Oro 30, 00186 Roma (Italia)
-                     </p>
-                <p>Lug. 2015-Ago. 2015</p>
-                <ul>
-                    <li>•Preparazione del menu alla carta;</li>
-                    <li>•Organizzazione pasti destinati al personale;</li>
-                    <li>•Addetto all' apprestamento della linea giornaliera;</li>
-                    <li>•Attività o settore Servizi di alloggio e di ristorazione;</li>
-                </ul>
+        <p>Le mie esperienze lavorative:</p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-flex">
+                    <div class=" carousel-curriculum">
+                        <h3>Cuoco</h3>
+                        <p>JK Place Hotel *****L<br>Via Di Monte D'Oro 30, 00186 Roma (Italia)</p>
+                        <p>Lug. 2015-Ago. 2015</p>
+                        <ul>
+                            <li>Preparazione del menu alla carta;</li>
+                            <li>Organizzazione pasti destinati al personale;</li>
+                            <li>Addetto all'apprestamento della linea giornaliera;</li>
+                            <li>Attività o settore Servizi di alloggio e di ristorazione;</li>
+                        </ul>
+                    </div>
+                    <div class=" carousel-curriculum">
+                        <h3>Cuoco</h3>
+                        <p>Rome Cavalieri Waldorf Astoria Hotel & Resort *****L<br>Via Alberto Cadlolo 101, 00186 Roma (Italia)</p>
+                        <p>Ago. 2016-Set. 2016</p>
+                        <ul>
+                            <li>Preparazione del menu alla carta;</li>
+                            <li>Addetto all'apprestamento della linea giornaliera;</li>
+                            <li>Attività o settore Servizi di alloggio e di ristorazione</li>
+                        </ul>
+                    </div>
+                    <div class="carousel-curriculum">
+                        <h3>Cuoco</h3>
+                        <p>Catering " Magnolia " Eventi S.R.L.<br>Monteporzio Catone (RM)</p>
+                        <p>giugn. 2017-Nov. 2017</p>
+                        <ul>
+                            <li>Preparazione della linea giornaliera;</li>
+                            <li>Eventi (matrimoni, meeting etc;)</li>
+                            <li>Attività o settore Servizi di alloggio e di ristorazione</li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
-            <div>nike</div>
-            <div>mattia</div>
-            <div>kri</div>
-            <div>vero</div>
-            <div>nike</div>
-            <div>mattia</div>
-            <div>kri</div>
+
+              <div class="carousel-item">
+                <div class="carousel-flex">
+                    <div class=" carousel-curriculum">
+                        <h3>Cuoco</h3>
+                    <p>Perspin S.R.L.<br>Roma (Servizio presso strutture ecclesiastiche)</p>
+                    <p>Dic. 2017-Dic. 2018</p>
+                    <ul>
+                        <li>Preparazione pasti giornalieri;</li>
+                        <li>Responsabile cucina, pulizie;</li>
+                        <li>Stoccaggio merci</li>
+                        <li>Attività o settore Servizi di alloggio e di ristorazione</li>
+                    </ul>
+                    </div>
+                    <div class=" carousel-curriculum">
+                        <h3>Cuoco/Pizzaiolo</h3>
+                        <p>Il casale pomodoro e basilico<br>Via casale molinara Palestrina (RM)</p>
+                        <p>Dic. 2018 - gen. 2021</p>
+                        <ul>
+                            <li>Preparazione del menu alla carta;</li>
+                            <li>Addetto all'apprestamento della linea giornaliera;</li>
+                            <li>Cuoco e Responsabile pizzeria</li>
+                            <li>Attività o settore Servizi di alloggio e di ristorazione</li>
+                        </ul>   
+                    </div>
+                    <div class="carousel-curriculum">
+                        <h3>Sous Chef</h3>
+                        <p>OLIMPIA BISTROT<br>Via Latina 31 Colleferro (RM)</p>
+                        <p>gen. 2021-apr. 2023</p>
+                        <ul>
+                            <li>Souschef</li>
+                            <li>Preparazione del menu alla carta;</li>
+                            <li>Addetto all'apprestamento della linea giornaliera;</li>
+                            <li>Attività o settore Servizi di alloggio e di ristorazione</li>
+                        </ul>  
+                    </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="carousel-flex">
+                    <div class=" carousel-curriculum">
+                        <h3>Cuoco</h3>
+                        <p>Ristorante "Il Vecchio" pastificio e cucina<br>Costa Adeje, Santa Cruz de Tenerife, Spagna</p>
+                        <p>magg. 2023-sett. 2023</p>
+                        <ul>
+                            <li>Preparazione del menu alla carta;</li>
+                            <li>Addetto all'apprestamento della linea giornaliera;</li>
+                            <li>Capo partita antipasti;</li>
+                            <li>Attività o settore Servizi di alloggio e di ristorazione;</li>
+                        </ul>   
+                    </div>
+                    <div class=" carousel-curriculum">
+                        <h3>Responsabile Attività</h3>
+                    <p>Pizzeria "Il Pomodorino"<br>Via Santa Maria Palestrina (RM)</p>
+                    <p>ott. 2023-attuale...</p>
+                    <ul>
+                        <li>Responsabile fornitori;</li>
+                        <li>Responsabile sicurezza;</li>
+                        <li>Responsabile HACCP;</li>
+                        <li>Responsabile del personale;</li>
+                        <li>Attività o settore Servizi di alloggio e di ristorazione;</li>
+                    </ul>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" style="background-color: black;" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" style="background-color: black;" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+                
+            
         </div>
     </section>
+    
     <section id="contact">
         <h2>Contatti</h2>
-        <p>Puoi contattarmi tramite i seguenti canali:</p>
-        <ul>
-            <li>Email: <a href="mailto:example@example.com">mattiasantandrea@libero.it</a></li>
-            <li>Telefono: +39 3384562123</li>
-            <a href="https://www.instagram.com/matti.santa98/" target="_blank">Seguimi su Instagram</a>
-            <a href="https://www.facebook.com/mattia.santandrea.3/" target="_blank">Seguimi su Facebook</a>
+        <section>
+            <h2>Compila il modulo per inviarmi un messaggio:</h2>
+            
+            <form>
+               
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Inserisci la tua email" >
+                </div>
 
-        </ul>
+                <div class="form-group">
+                    <label for="messaggio">Messaggio:</label>
+                    <textarea id="messaggio" name="messaggio" rows="5" required placeholder="Scrivi il tuo messaggio" ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">Invia Messaggio</button> 
+            </form>
+        </section>
+       
     </section>
-
     <footer>
+        <p>Puoi contattarmi tramite i seguenti canali:</p>
+        
+            <p>Email: <a href="mailto:example@example.com">mattiasantandrea@libero.it</a></p>
+            <p>Telefono: +39 3384562123</p>
+            <a href="https://www.instagram.com/matti.santa98/" target="_blank" ><i class="fab fa-instagram"></i></a> 
+            <a href="https://www.facebook.com/mattia.santandrea.3/" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="https://github.com/mattiasantandrea" target="_blank" ><i class="fa-brands fa-github"></i></a> 
+        
         <p>&copy; 2025 [Mattia Santandrea] - Tutti i diritti riservati</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
